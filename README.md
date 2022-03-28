@@ -58,7 +58,7 @@
 **polymorphic**
 - 多态
 
-**Operator_overloading  **
+**Operator_overloading**
 - 运算符重载
 
 **Interface**
