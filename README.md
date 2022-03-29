@@ -87,3 +87,6 @@
 
 **Property**
 - 属性
+
+**indexer**
+- 缩引器

@@ -88,7 +88,8 @@ namespace runoobs
         }
     }
 
-    class Student : Person
+    class Student
+    // class Student : Person
     {
         private string code = "N.A";
         private string name = "N.A";
@@ -106,22 +107,22 @@ namespace runoobs
             }
         }
 
-        public override int Age
-        {
-            get
-            {
-                return age;
-            }
-            set
-            {
-                age = value;
-            }
-        }
+        // public override int Age
+        // {
+        //     get
+        //     {
+        //         return age;
+        //     }
+        //     set
+        //     {
+        //         age = value;
+        //     }
+        // }
 
-        public override string ToString()
-        {
-            return "Code=" + code + ",Name=" + Name + ",Age=" + Age;
-        }
+        // public override string ToString()
+        // {
+        //     return "Code=" + code + ",Name=" + Name + ",Age=" + Age;
+        // }
     }
 
     class ExampleDemo
