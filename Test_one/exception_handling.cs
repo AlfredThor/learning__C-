@@ -17,7 +17,7 @@ namespace ErrorHandlingApplication
         {
             try
             {
-                result = num1 / n9um2;
+                result = num1 / num2;
             }
             catch (DivideByZeroException e)
             {
@@ -39,13 +39,43 @@ namespace ErrorHandlingApplication
 }
 
 //用户自定义异常
-namespace Application1
+namespace UserDefinedException
 {
     class TestTemperature
     {
-        static void Main(string[] args)
+        // static void Main(string[] args)
+        // {
+        //     Temperature temp = new Temperature();
+        //     try
+        //     {
+        //         temp.showTemp();
+        //     }
+        //     catch(TempIsZeroException e)
+        //     {
+        //         Console.WriteLine("TempIsZeroException: {0}", e.Message);
+        //     }
+        //     Console.ReadKey();
+        // }
+    }
+}
+public class TempIsZeroException: ApplicationException
+{
+    public TempIsZeroException(string message): base(message)
+    {
+    }
+}
+public class Temperature
+{
+    int temperature = 0;
+    public void showTemp()
+    {
+        if(temperature == 0)
         {
-            Temperature temp
+            throw (new TempIsZeroException("Zero Temperature found"));
+        }
+        else
+        {
+            Console.WriteLine("Temperature: {0}", temperature);
         }
     }
 }
