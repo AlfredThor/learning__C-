@@ -2,7 +2,7 @@
 - 在项目中只能存在一个Main()函数，否则会报错
 
 ---
-# 目录
+# Test_one中的目录
 - **Program.cs** 程序结构
 - **Test_two** 基本语法
 - **Test_three** 类型转换
@@ -34,3 +34,8 @@
 - **indexer** 缩引器
 - **Delegate** 委托
 - **event** 事件
+- **Collection** 集合
+- **Generic** 泛型
+- **Anonymous_methods** 匿名方法
+- **unsafess** 不安全代码
+- **multithreading** 多线程
